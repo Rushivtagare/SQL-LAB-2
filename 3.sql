@@ -1,0 +1,10 @@
+SELECT * FROM accounts;
+alter table accounts add Balance decimal (10 ,2);
+alter table accounts add constraint check (Balance>1000);
+use bank ;
+drop table if exists accountbranches;
+select * from customer ;
+alter table customer add constraint P_K primary Key (CutomerID);
+alter table customer modify  FirstName varchar (50) Not Null;
+ALTER TABLE Customer ADD CONSTRAINT uq_Email UNIQUE (Email);
+ select *from customer;
